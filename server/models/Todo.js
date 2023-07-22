@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 const {Schema} = mongoose;
 const todoSchema = new Schema({
 title:{
-    type: 'string',
+    type: String,
     required: true,
 },
 finished:{
-    type: 'boolean',
+    type: Boolean,
     required: false,
     default: false,
 },
@@ -18,4 +18,4 @@ user:{
 }
 }, {timestamps: true});
 
-export default mongoose.model('todo', todoSchema);
+export default mongoose.model('Todo', todoSchema);
