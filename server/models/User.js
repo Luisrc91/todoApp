@@ -8,12 +8,13 @@ name:{
 },
 email:{
     type: String,
-    required: false,
-    default: false,
+    required: true,
+    unique: true,
+    
 },
 password:{
     type: String,
-    ref: 'User',
+  
     require: true,
 }
 }, {timestamps: true});
